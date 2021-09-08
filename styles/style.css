@@ -7,7 +7,7 @@ h1 {
     text-align: center;
 }
 header {
-    width: 100%;
+    width: 90%;
     background: #C94848;
     border: 3px solid #5A5A5A;
     padding: 15px;
@@ -32,7 +32,7 @@ section {
 }
 article {
     float: left;
-    width: 33%;
+    width: 90%;
     margin: 1px;
     background: rgb(177, 150, 150)
 }
