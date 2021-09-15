@@ -1,5 +1,5 @@
 * {
-				margin: 0px;
+			margin: 0px;
     padding: 0px;
 }
 h1 {
@@ -7,11 +7,13 @@ h1 {
     text-align: center;
 }
 header {
+    max-width: 100%;
     background: #D6680E;
     border: 3px solid #5A5A5A;
     padding: 15px;
 }
 nav {
+    text-align: center;
     background: #FFB76E;
     padding: 5px 15px;
 }
@@ -30,7 +32,7 @@ section {
 }
 article {
     float: left;
-    width: 330;
+    width: 100%;
     margin: 1px;
     background: rgb(255, 160, 122)
 }
@@ -43,7 +45,7 @@ aside {
 footer {
     clear: both;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border-top: 2px solid #888888;
 }
 body {
