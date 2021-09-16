@@ -58,7 +58,7 @@ h4 {
     text-align: center;
     }
 iframe {
-    text-align: right;
+    float: right;
     max-width: 100%;
     background: #C94848;
     border: 3px solid #5A5A5A;
