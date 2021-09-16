@@ -27,7 +27,7 @@ section {
     float: left;
     width: 360px;
     margin: 10px;
-    padding: 10px;
+    padding: 10px; 
     background: rgb(192, 125, 125)
 }
 article {
@@ -56,4 +56,19 @@ body {
 h4 {
     font: bold 30px verdana, sans-serif;
     text-align: center;
+    }
+iframe {
+    text-align: right;
+    max-width: 100%;
+    background: #C94848;
+    border: 3px solid #5A5A5A;
+    padding: 15px;
+    }
+
+div {
+    clear: both;
+    max-width: 100%;
+    background: #FF6270;
+    border: 3px solid #5A5A5A;
+    padding: 10px;
     }
