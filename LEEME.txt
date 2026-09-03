@@ -1,0 +1,17 @@
+GHOSSBOT WEB — FAVICON + VISTA PREVIA
+
+Subí TODOS estos archivos directamente a la raíz de tu repositorio de GitHub Pages.
+
+Nuevos archivos:
+- ghossbot.png              -> favicon / icono
+- ghossbot-preview.png      -> imagen para compartir la URL
+
+También se agregaron las etiquetas Open Graph y Twitter a todas las páginas.
+
+IMPORTANTE:
+Después de subir los archivos, GitHub Pages puede tardar unos minutos en actualizarse.
+Discord y otras aplicaciones pueden guardar en caché la vista previa anterior. Si no cambia
+al instante, esperá unos minutos y volvé a compartir la URL.
+
+URL de la página:
+https://ghossbot.github.io/

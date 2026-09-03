@@ -1,1 +1,169 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GhossBot — GhossBot</title><meta name="description" content="GhossBot, bot multifunción para Discord."><style>*{box-sizing:border-box}body{margin:0;background:#0b0d12;color:#f5f7fb;font-family:Arial,sans-serif;line-height:1.6}a{color:inherit}.wrap{max-width:1050px;margin:auto;padding:0 20px}header{position:sticky;top:0;background:#0b0d12eF;border-bottom:1px solid #252b38;padding:15px 0;z-index:5}.nav{display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;text-decoration:none;font-size:20px}.logo{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#8b5cf6,#ec4899);margin-right:9px}.links{display:flex;gap:15px}.links a{text-decoration:none;color:#aab2c2;font-size:14px}.links a:hover{color:white}.hero{text-align:center;padding:85px 20px}.badge{border:1px solid #41345d;background:#181326;padding:7px 12px;border-radius:99px;color:#cfc3ff;font-size:13px}.hero h1{font-size:clamp(42px,8vw,72px);line-height:1;margin:22px 0 16px}.grad{background:linear-gradient(90deg,#fff,#c4b5fd,#f9a8d4);color:transparent;background-clip:text}.hero p{max-width:700px;margin:auto;color:#9ba6b8;font-size:18px}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:bold;background:#191e28;border:1px solid #293140}.primary{border:0;background:linear-gradient(135deg,#8b5cf6,#ec4899)}section{padding:25px 0 70px}.title{text-align:center;margin-bottom:28px}.title h2{font-size:30px;margin:0}.title p{color:#9ba6b8}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}.card{background:#11161f;border:1px solid #252d3a;border-radius:18px;padding:22px;text-decoration:none;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#5a477d}.card .icon{font-size:28px}.card h3{margin:10px 0 5px}.card p{color:#9ba6b8;margin:0;font-size:14px}.cmds{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}.cmd{background:#11161f;border:1px solid #252d3a;border-radius:12px;padding:14px}.cmd code{color:#ddd6fe;font-family:monospace}.cmd small{display:block;color:#9ba6b8;margin-top:4px}.search{max-width:650px;margin:0 auto 20px}.search input{width:100%;padding:15px;border-radius:12px;border:1px solid #293140;background:#0f131a;color:white;font-size:15px}footer{border-top:1px solid #252d3a;text-align:center;padding:35px;color:#8e98aa;font-size:13px}@media(max-width:650px){.links a:nth-child(n+3){display:none}.hero{padding:65px 20px}.nav{height:40px}}</style></head><body><header><div class="wrap nav"><a class="brand" href="index.html"><span class="logo">🤖</span>GhossBot</a><nav class="links"><a href="index.html">Inicio</a><a href="#funciones">Funciones</a><a href="Moderacion.html">Comandos</a><a href="https://discord.com/invite/5Wsrddkaq7">Discord</a></nav></div></header><main><div class="wrap hero"><span class="badge">🤖 Bot multifunción para Discord</span><h1>Tu servidor, <span class="grad">potenciado</span>.</h1><p>Moderación, administración, diversión, Minecraft y economía. Todo en un solo bot.</p><div class="buttons"><a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=864595576511660052&permissions=2147483647&scope=bot+applications.commands">➕ Invitar GhossBot</a><a class="btn" href="https://discord.com/invite/5Wsrddkaq7">💬 Servidor de soporte</a></div></div><section id="funciones"><div class="wrap"><div class="title"><h2>✨ Funciones</h2><p>Explorá GhossBot por categoría.</p></div><div class="grid"><a class="card" href="Moderacion.html"><div class="icon">🛡️</div><h3>Moderación</h3><p>Herramientas para mantener tu servidor ordenado.</p></a><a class="card" href="Administracion.html"><div class="icon">⚙️</div><h3>Administración</h3><p>Configuración y gestión de tu servidor.</p></a><a class="card" href="Diversion.html"><div class="icon">🎉</div><h3>Diversión</h3><p>Juegos, interacciones y comandos divertidos.</p></a><a class="card" href="Minecraft.html"><div class="icon">⛏️</div><h3>Minecraft</h3><p>Funciones y herramientas para Minecraft.</p></a><a class="card" href="Economia.html"><div class="icon">💰</div><h3>Economía</h3><p>Dinero, banco, trabajo y rankings.</p></a></div></div></section><section><div class="wrap"><div class="title"><h2>🔎 Comandos</h2><p>Buscá rápidamente entre los comandos disponibles.</p></div><div class="search"><input id="q" oninput="filter()" placeholder="Buscar: ban, ticket, dinero, skin..."></div><div class="cmds" id="results"></div></div></section></main><footer>🤖 GhossBot · Creado por Ghossent · Desde el 14 de julio de 2021<br>© 2026 GhossBot</footer><script>const data=[("g=kick", "Expulsa a una persona", "Moderación"), ("g=ban", "Banea a una persona", "Moderación"), ("g=idban", "Banea usando su ID", "Moderación"), ("g=unban", "Desbanea a una persona", "Moderación"), ("g=mute", "Silencia a una persona", "Moderación"), ("g=unmute", "Quita el silencio", "Moderación"), ("g=clear", "Elimina mensajes", "Moderación"), ("g=warn", "Da una advertencia", "Moderación"), ("g=unwarn", "Quita una advertencia", "Moderación"), ("g=totalwarn", "Muestra las advertencias", "Moderación"), ("g=new", "Crea un ticket", "Moderación"), ("g=close", "Cierra un ticket", "Moderación"), ("g=slowmode", "Configura slowmode", "Moderación"), ("g=sugerir", "Envía una sugerencia", "Moderación"), ("g=setsug", "Configura sugerencias", "Moderación"), ("g=voto", "Publica una votación", "Moderación"), ("g=serverinfo", "Información del servidor", "Moderación"), ("g=miembros", "Muestra los miembros", "Moderación"), ("g=embedsay", "Mensaje embed", "Moderación"), ("g=embedimg", "Imagen en embed", "Moderación"), ("g=emoji", "ID de emoji", "Moderación"), ("=levelactive", "Activa los niveles", "Administración"), ("=colorrank", "Cambia el color del rank", "Administración"), ("=clevel", "Canal de niveles", "Administración"), ("=setupserver", "Configura el servidor", "Administración"), ("=anuncio", "Envía un anuncio", "Administración"), ("=wchannel", "Canal de bienvenida", "Administración"), ("=wtext", "Texto de bienvenida", "Administración"), ("=wimage", "Imagen de bienvenida", "Administración"), ("=wprueba", "Prueba la bienvenida", "Administración"), ("=wcolor", "Color de bienvenida", "Administración"), ("=lchannel", "Canal de despedidas", "Administración"), ("=ltext", "Texto de despedida", "Administración"), ("=limage", "Imagen de despedida", "Administración"), ("=tnew", "Mensaje de ticket", "Administración"), ("=ctnew", "Ticket personalizado", "Administración"), ("=logclose", "Logs de tickets", "Administración"), ("=emojiadd", "Agrega un emoji", "Administración"), ("g=antilink on", "Activa Anti-Link", "Administración"), ("g=antilink off", "Desactiva Anti-Link", "Administración"), ("g=enablelink", "Selecciona canal de links", "Administración"), ("g=disablelink", "Elimina canal de links", "Administración"), ("g=cnewping", "Menciones al staff", "Administración"), ("g=afk on", "Activa AFK", "Diversión"), ("g=afk off", "Desactiva AFK", "Diversión"), ("g=slap", "Cachetada", "Diversión"), ("g=kill", "Interacción divertida", "Diversión"), ("g=say", "El bot habla", "Diversión"), ("g=randomship", "Ship aleatorio", "Diversión"), ("g=ship", "Ship V1", "Diversión"), ("g=love", "Ship V2", "Diversión"), ("g=sad", "Interacción triste", "Diversión"), ("g=memes", "Muestra memes", "Diversión"), ("g=ping", "Comprueba el ping", "Diversión"), ("g=ppt", "Piedra, papel o tijeras", "Diversión"), ("g=dados", "Tira dados", "Diversión"), ("g=avatar", "Muestra avatar", "Diversión"), ("g=toprank", "Top global", "Diversión"), ("g=kiss", "Beso", "Diversión"), ("g=jumbo", "Emoji grande", "Diversión"), ("g=hug", "Abrazo", "Diversión"), ("g=revivir", "Revive a alguien", "Diversión"), ("g=angry", "Enojo", "Diversión"), ("g=blush", "Sonrojo", "Diversión"), ("g=atrapar", "Atrapa a alguien", "Diversión"), ("g=azar", "Juego de números", "Diversión"), ("=servermc", "Estadísticas del servidor", "Minecraft"), ("=skinmc", "Muestra tu skin", "Minecraft"), ("=cabezamc", "Muestra la cabeza", "Minecraft"), ("=caramc", "Muestra la cara", "Minecraft"), ("=logromc", "Crea un logro", "Minecraft"), ("g=moneywallet", "Muestra tu dinero", "Economía"), ("g=comprar caña", "Compra una caña", "Economía"), ("g=ucaña", "Pesca", "Economía"), ("g=caña", "Usos de caña", "Economía"), ("g=work", "Trabaja", "Economía"), ("g=rulet", "Gira la ruleta", "Economía"), ("g=casino", "Casino", "Economía"), ("g=topmoney", "Top de dinero", "Economía"), ("g=rob", "Intenta robar", "Economía"), ("g=moneybank", "Dinero del banco", "Economía"), ("g=deposit", "Deposita", "Economía"), ("g=with", "Retira del banco", "Economía"), ("g=dardinero", "Da dinero", "Economía"), ("g=dep all", "Deposita todo", "Economía"), ("g=give", "Agrega dinero", "Economía"), ("g=removemoney", "Quita dinero", "Economía"), ("g=removebank", "Quita del banco", "Economía")];function filter(){let q=document.getElementById('q').value.toLowerCase();let a=data.filter(x=>(x[0]+' '+x[1]+' '+x[2]).toLowerCase().includes(q));document.getElementById('results').innerHTML=a.map(x=>'<div class="cmd"><code>'+x[0]+'</code><small>'+x[1]+' · '+x[2]+'</small></div>').join('')||'<div class="cmd">No se encontraron comandos.</div>'}filter()</script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   GhossBot — GhossBot
+  </title>
+  <meta content="GhossBot, bot multifunción para Discord." name="description"/>
+  <link href="style.css?v=3" rel="stylesheet"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="ghossbot.png"/>
+  <link rel="apple-touch-icon" href="ghossbot.png"/>
+  <meta property="og:title" content="GhossBot — Bot multifunción para Discord"/>
+  <meta property="og:description" content="Moderación, administración, diversión, Minecraft y economía. Todo en un solo bot."/>
+  <meta property="og:image" content="https://ghossbot.github.io/ghossbot-preview.png"/>
+  <meta property="og:url" content="https://ghossbot.github.io/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="GhossBot"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="GhossBot — Bot multifunción para Discord"/>
+  <meta name="twitter:description" content="Moderación, administración, diversión, Minecraft y economía. Todo en un solo bot."/>
+  <meta name="twitter:image" content="https://ghossbot.github.io/ghossbot-preview.png"/>
+ </head>
+ <body>
+  <header>
+   <div class="wrap nav">
+    <a class="brand" href="index.html">
+     <span class="logo">
+      🤖
+     </span>
+     GhossBot
+    </a>
+    <nav class="links">
+     <a href="index.html">
+      Inicio
+     </a>
+     <a href="#funciones">
+      Funciones
+     </a>
+     <a href="Moderacion.html">
+      Comandos
+     </a>
+     <a href="https://discord.com/invite/5Wsrddkaq7">
+      Discord
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <div class="wrap hero">
+    <span class="badge">
+     🤖 Bot multifunción para Discord
+    </span>
+    <h1>
+     Tu servidor,
+     <span class="grad">
+      potenciado
+     </span>
+     .
+    </h1>
+    <p>
+     Moderación, administración, diversión, Minecraft y economía. Todo en un solo bot.
+    </p>
+    <div class="buttons">
+     <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=864595576511660052&amp;permissions=2147483647&amp;scope=bot+applications.commands">
+      ➕ Invitar GhossBot
+     </a>
+     <a class="btn" href="https://discord.com/invite/5Wsrddkaq7">
+      💬 Servidor de soporte
+     </a>
+    </div>
+   </div>
+   <section id="funciones">
+    <div class="wrap">
+     <div class="title">
+      <h2>
+       ✨ Funciones
+      </h2>
+      <p>
+       Explorá GhossBot por categoría.
+      </p>
+     </div>
+     <div class="grid">
+      <a class="card" href="Moderacion.html">
+       <div class="icon">
+        🛡️
+       </div>
+       <h3>
+        Moderación
+       </h3>
+       <p>
+        Herramientas para mantener tu servidor ordenado.
+       </p>
+      </a>
+      <a class="card" href="Administracion.html">
+       <div class="icon">
+        ⚙️
+       </div>
+       <h3>
+        Administración
+       </h3>
+       <p>
+        Configuración y gestión de tu servidor.
+       </p>
+      </a>
+      <a class="card" href="Diversion.html">
+       <div class="icon">
+        🎉
+       </div>
+       <h3>
+        Diversión
+       </h3>
+       <p>
+        Juegos, interacciones y comandos divertidos.
+       </p>
+      </a>
+      <a class="card" href="Minecraft.html">
+       <div class="icon">
+        ⛏️
+       </div>
+       <h3>
+        Minecraft
+       </h3>
+       <p>
+        Funciones y herramientas para Minecraft.
+       </p>
+      </a>
+      <a class="card" href="Economia.html">
+       <div class="icon">
+        💰
+       </div>
+       <h3>
+        Economía
+       </h3>
+       <p>
+        Dinero, banco, trabajo y rankings.
+       </p>
+      </a>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="wrap">
+     <div class="title">
+      <h2>
+       🔎 Comandos
+      </h2>
+      <p>
+       Buscá rápidamente entre los comandos disponibles.
+      </p>
+     </div>
+     <div class="search">
+      <input id="q" placeholder="Buscar un comando: ban, mute, skinmc..."/>
+     </div>
+     <div class="cmds" id="results">
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   🤖 GhossBot · Creado por Ghossent · Desde el 14 de julio de 2021
+   <br/>
+   © 2026 GhossBot
+  </footer>
+  <script src="commands.js?v=3"></script>
+  <script src="search.js?v=3">
+  </script>
+ </body>
+</html>

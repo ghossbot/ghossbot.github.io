@@ -1,1 +1,264 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Diversión — GhossBot</title><meta name="description" content="GhossBot, bot multifunción para Discord."><style>*{box-sizing:border-box}body{margin:0;background:#0b0d12;color:#f5f7fb;font-family:Arial,sans-serif;line-height:1.6}a{color:inherit}.wrap{max-width:1050px;margin:auto;padding:0 20px}header{position:sticky;top:0;background:#0b0d12eF;border-bottom:1px solid #252b38;padding:15px 0;z-index:5}.nav{display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;text-decoration:none;font-size:20px}.logo{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#8b5cf6,#ec4899);margin-right:9px}.links{display:flex;gap:15px}.links a{text-decoration:none;color:#aab2c2;font-size:14px}.links a:hover{color:white}.hero{text-align:center;padding:85px 20px}.badge{border:1px solid #41345d;background:#181326;padding:7px 12px;border-radius:99px;color:#cfc3ff;font-size:13px}.hero h1{font-size:clamp(42px,8vw,72px);line-height:1;margin:22px 0 16px}.grad{background:linear-gradient(90deg,#fff,#c4b5fd,#f9a8d4);color:transparent;background-clip:text}.hero p{max-width:700px;margin:auto;color:#9ba6b8;font-size:18px}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:bold;background:#191e28;border:1px solid #293140}.primary{border:0;background:linear-gradient(135deg,#8b5cf6,#ec4899)}section{padding:25px 0 70px}.title{text-align:center;margin-bottom:28px}.title h2{font-size:30px;margin:0}.title p{color:#9ba6b8}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}.card{background:#11161f;border:1px solid #252d3a;border-radius:18px;padding:22px;text-decoration:none;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#5a477d}.card .icon{font-size:28px}.card h3{margin:10px 0 5px}.card p{color:#9ba6b8;margin:0;font-size:14px}.cmds{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}.cmd{background:#11161f;border:1px solid #252d3a;border-radius:12px;padding:14px}.cmd code{color:#ddd6fe;font-family:monospace}.cmd small{display:block;color:#9ba6b8;margin-top:4px}.search{max-width:650px;margin:0 auto 20px}.search input{width:100%;padding:15px;border-radius:12px;border:1px solid #293140;background:#0f131a;color:white;font-size:15px}footer{border-top:1px solid #252d3a;text-align:center;padding:35px;color:#8e98aa;font-size:13px}@media(max-width:650px){.links a:nth-child(n+3){display:none}.hero{padding:65px 20px}.nav{height:40px}}</style></head><body><header><div class="wrap nav"><a class="brand" href="index.html"><span class="logo">🤖</span>GhossBot</a><nav class="links"><a href="index.html">Inicio</a><a href="#funciones">Funciones</a><a href="Moderacion.html">Comandos</a><a href="https://discord.com/invite/5Wsrddkaq7">Discord</a></nav></div></header><main><div class="wrap hero" style="padding-bottom:35px"><span class="badge">🎉 Diversión</span><h1>Comandos de <span class="grad">Diversión</span></h1><p>Juegos, interacciones y comandos divertidos.</p></div><section><div class="wrap"><div class="cmds"><div class="cmd"><code>g=afk on</code><small>Activa AFK</small></div><div class="cmd"><code>g=afk off</code><small>Desactiva AFK</small></div><div class="cmd"><code>g=slap</code><small>Cachetada</small></div><div class="cmd"><code>g=kill</code><small>Interacción divertida</small></div><div class="cmd"><code>g=say</code><small>El bot habla</small></div><div class="cmd"><code>g=randomship</code><small>Ship aleatorio</small></div><div class="cmd"><code>g=ship</code><small>Ship V1</small></div><div class="cmd"><code>g=love</code><small>Ship V2</small></div><div class="cmd"><code>g=sad</code><small>Interacción triste</small></div><div class="cmd"><code>g=memes</code><small>Muestra memes</small></div><div class="cmd"><code>g=ping</code><small>Comprueba el ping</small></div><div class="cmd"><code>g=ppt</code><small>Piedra, papel o tijeras</small></div><div class="cmd"><code>g=dados</code><small>Tira dados</small></div><div class="cmd"><code>g=avatar</code><small>Muestra avatar</small></div><div class="cmd"><code>g=toprank</code><small>Top global</small></div><div class="cmd"><code>g=kiss</code><small>Beso</small></div><div class="cmd"><code>g=jumbo</code><small>Emoji grande</small></div><div class="cmd"><code>g=hug</code><small>Abrazo</small></div><div class="cmd"><code>g=revivir</code><small>Revive a alguien</small></div><div class="cmd"><code>g=angry</code><small>Enojo</small></div><div class="cmd"><code>g=blush</code><small>Sonrojo</small></div><div class="cmd"><code>g=atrapar</code><small>Atrapa a alguien</small></div><div class="cmd"><code>g=azar</code><small>Juego de números</small></div></div></div></section></main><footer><a href="index.html">← Volver al inicio</a><br><br>🤖 GhossBot · Creado por Ghossent · © 2026</footer></body></html>
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Diversión — GhossBot
+  </title>
+  <meta content="GhossBot, bot multifunción para Discord." name="description"/>
+  <link href="style.css?v=3" rel="stylesheet"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="ghossbot.png"/>
+  <link rel="apple-touch-icon" href="ghossbot.png"/>
+  <meta property="og:title" content="GhossBot — Bot multifunción para Discord"/>
+  <meta property="og:description" content="Moderación, administración, diversión, Minecraft y economía. Todo en un solo bot."/>
+  <meta property="og:image" content="https://ghossbot.github.io/ghossbot-preview.png"/>
+  <meta property="og:url" content="https://ghossbot.github.io/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="GhossBot"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="GhossBot — Bot multifunción para Discord"/>
+  <meta name="twitter:description" content="Moderación, administración, diversión, Minecraft y economía. Todo en un solo bot."/>
+  <meta name="twitter:image" content="https://ghossbot.github.io/ghossbot-preview.png"/>
+ </head>
+ <body>
+  <header>
+   <div class="wrap nav">
+    <a class="brand" href="index.html">
+     <span class="logo">
+      🤖
+     </span>
+     GhossBot
+    </a>
+    <nav class="links">
+     <a href="index.html">
+      Inicio
+     </a>
+     <a href="#funciones">
+      Funciones
+     </a>
+     <a href="Moderacion.html">
+      Comandos
+     </a>
+     <a href="https://discord.com/invite/5Wsrddkaq7">
+      Discord
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <div class="wrap hero" style="padding-bottom:35px">
+    <span class="badge">
+     🎉 Diversión
+    </span>
+    <h1>
+     Comandos de
+     <span class="grad">
+      Diversión
+     </span>
+    </h1>
+    <p>
+     Juegos, interacciones y comandos divertidos.
+    </p>
+   </div>
+   <section>
+    <div class="wrap">
+     <div class="cmds">
+      <div class="cmd">
+       <code>
+        g=afk on
+       </code>
+       <small>
+        Activa AFK
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=afk off
+       </code>
+       <small>
+        Desactiva AFK
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=slap
+       </code>
+       <small>
+        Cachetada
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=kill
+       </code>
+       <small>
+        Interacción divertida
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=say
+       </code>
+       <small>
+        El bot habla
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=randomship
+       </code>
+       <small>
+        Ship aleatorio
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=ship
+       </code>
+       <small>
+        Ship V1
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=love
+       </code>
+       <small>
+        Ship V2
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=sad
+       </code>
+       <small>
+        Interacción triste
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=memes
+       </code>
+       <small>
+        Muestra memes
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=ping
+       </code>
+       <small>
+        Comprueba el ping
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=ppt
+       </code>
+       <small>
+        Piedra, papel o tijeras
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=dados
+       </code>
+       <small>
+        Tira dados
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=avatar
+       </code>
+       <small>
+        Muestra avatar
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=toprank
+       </code>
+       <small>
+        Top global
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=kiss
+       </code>
+       <small>
+        Beso
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=jumbo
+       </code>
+       <small>
+        Emoji grande
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=hug
+       </code>
+       <small>
+        Abrazo
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=revivir
+       </code>
+       <small>
+        Revive a alguien
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=angry
+       </code>
+       <small>
+        Enojo
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=blush
+       </code>
+       <small>
+        Sonrojo
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=atrapar
+       </code>
+       <small>
+        Atrapa a alguien
+       </small>
+      </div>
+      <div class="cmd">
+       <code>
+        g=azar
+       </code>
+       <small>
+        Juego de números
+       </small>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <a href="index.html">
+    ← Volver al inicio
+   </a>
+   <br/>
+   <br/>
+   🤖 GhossBot · Creado por Ghossent · © 2026
+  </footer>
+ </body>
+</html>
